@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blood | is.kreativ</title>
+    <link rel="stylesheet" href="blood.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="iskreativ logo.ico">
+    <link rel="shortcut icon" href="iskreativ logo.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="iskreativ logo.ico">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>MY BLOOD</h1>
+    <small>formación inicial</small>
+</header>
+
+<nav class="nav">
+    <ul class="nav-list">
+        <li><a href="index.html">¿is kreativ?</a></li>
+        <li><a href="blood.html">blood</a></li>
+        <li><a href="bones.html">bones</a></li>
+        <li><a href="brain.html">brain</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section class="intro">
+    <div class="content">
+        <h2>¿diseño de qué?</h2>
+        <p>Esa es la pregunta que siempre me hacen. Y yo respondo: diseño… sin apellidos. Integral. Como un todo. Es como decir que estudio el cuerpo entero, no solo un órgano. Es diseño que conecta ideas, disciplinas y emociones. Y sí, al principio suena raro, pero justo ahí está la magia: es diseño que no se limita, que se atreve a ser todo.</p>
+    </div>
+
+    <div class="imagen">
+        <img src="recursos_portafolio\blood\polaroidcollage.png" alt="imagenes de diseño">
+    </div>
+</section>
+
+<section class="trimestre">
+    <div class="content">
+
+        <h2 class="tri-title">trimestre 1</h2>
+
+        <p class="quote">
+            I nailed it!
+        </p>
+
+        <div class="galeria">
+
+            <div class="card">
+                <a href="https://canva.link/4jc34z6djfl5med"><img src="recursos_portafolio\blood\prax.png" alt="Praxinoscopio"></a>
+                <p class="uea">Taller de Lenguajes para el Diseño</p>
+            </div>
+
+            <div class="card">
+                <a href="https://drive.google.com/file/d/1HECcNjzs8ZdCnxfadOUUmwX11tK8pH45/view?usp=sharing"><img src="recursos_portafolio\blood\object.png" alt="Psicología de los Objetos Cotidianos"></a>
+                <p class="uea">Taller de Literacidad Académica</p>
+            </div>
+
+        </div>
+
+        <p class="reflexion">
+            Entré con la duda de si iba a ser suficiente… y terminé descubriendo que mis ganas de aprender eran más grandes que cualquier miedo. No me quedé chica: me expandí.
+        </p>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- imagen izquierda -->
+        <div class="footer-logo">
+            <img src="recursos_portafolio\blood\lips3.png" alt="letstalk">
+        </div>
+
+        <div class="footer-title">
+            <h4>CONTACTO</h4>
+            <p>¡Hablemos, crea conmigo!</p>
+        </div>
+
+        <div class="footer-info">
+            <p>correo | <a href="mailto:iskreativ.ez@gmail.com">iskreativ.ez@gmail.com</a></p>
+            <p>instagram | @iskreativ</p>
+        </div>
+
+    </div>
+
+    <div class="copy">
+        <p>©2026 IS KREATIV</p>
+    </div>
+
+</footer>
+<!-- Btn scrolltop -->
+    <button id="scrollTopBtn" title="Volver arriba"><img src="recursos_portafolio\soul\arrowwhite.png" alt=""></button>
+
+<!-- Btn scrolltop -->
+<button id="scrollTopBtn" title="Volver arriba">↑</button>
+
+<script>
+const btn = document.getElementById("scrollTopBtn");
+const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", function(){
+
+    let navBottom = nav.offsetTop + nav.offsetHeight;
+
+    if(window.scrollY > navBottom){
+        btn.classList.add("show");
+    }else{
+        btn.classList.remove("show");
+    }
+
+});
+
+btn.addEventListener("click", function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portafolio | is.kreativ</title>
+    <link rel="stylesheet" href="soul.css"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="iskreativ logo.ico">
+    <link rel="shortcut icon" href="iskreativ logo.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="iskreativ logo.ico">
+
+</head>
+
+
+<body>
+
+
+<!--header-->
+<header class="header">
+    
+    <div class="logo">
+        <img src="recursos_portafolio/logos/blancos/logo1.png" class="logo-img active">
+        <img src="recursos_portafolio/logos/blancos/logo2.png" class="logo-img">
+        <img src="recursos_portafolio/logos/blancos/logo3.png" class="logo-img">
+        <img src="recursos_portafolio/logos/blancos/logo4.png" class="logo-img">
+        <img src="recursos_portafolio/logos/blancos/logo5.png" class="logo-img">
+    </div>
+
+    <small>portafolio</small>
+
+</header>
+
+<!--nav-->
+<nav class="nav">
+    <ul class="nav-list">
+        <li><a href="index.html">¿is kreativ?</a></li>
+        <li><a href="blood.html">blood</a></li>
+        <li><a href="bones.html">bones</a></li>
+        <li><a href="brain.html">brain</a></li>
+    </ul>
+</nav>
+
+
+<main>
+
+
+<!--presentación-->
+<section class="presentacion">
+    <div class="content">
+        <h2>¿is kreativ?</h2>
+        <p>Is kreativ es una mente en constante movimiento que crea desde la curiosidad y la creatividad.
+        Con la meta de transformar todo tipo de ideas en proyecciones que inspiren y evolucionen.</p>
+        <p>Being creative is easy!</p>
+    </div>
+
+</section>
+
+
+<!--objetivo-->
+<section class="proyecto">
+    <div class="content">
+        <h2>objetivo</h2>
+        <p>Este portafolio digital reúne mis proyectos más destacables, de la carrera. Mostrando mi proceso de investigación, conceptualización, desarrollo y proyección</p>
+        <p>Cada trabajo forma parte de la construcción de mi identidad como diseñadora. Es un espacio pensado para inspirar y compartir.</p>
+    </div>
+</section>
+
+<div class="cuerpo-container">
+    <img src="recursos_portafolio\soul\bodykei.png" alt="grafico cuerpo">
+</div>
+
+
+<!--preview-->
+<section class="preview">
+    <div><a href="blood.html"><img src="recursos_portafolio\soul\blood.png" alt="preview blood"></a></div>
+    <div><a href="bones.html"><img src="recursos_portafolio\soul\bones.png" alt="preview bones"></a></div>
+    <div><a href="brain.html"><img src="recursos_portafolio\soul\brain.png" alt="preview brain"></a></div>
+</section>
+
+
+<!--redes-->
+<section class="redes">
+    <h2>my social media</h2>
+    <p>look at me, look at me</p>
+    <div class="social">
+        <a href="https://www.instagram.com/is.kreativ?igsh=dnB4cGJkaWdnc2Rs"><img src="recursos_portafolio\socialmediaicons\instagram.png" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@is.kreativ?is_from_webapp=1&sender_device=pc"><img src="recursos_portafolio\socialmediaicons\tiktok.png" alt="">Tiktok</a>
+        <a href="https://youtube.com/@is.kreativ?si=O5oD09cZcwPDnOmz"><img src="recursos_portafolio\socialmediaicons\youtube.png" alt="">Youtube</a>
+        <a href="https://www.behance.net/is-kreativ"><img src="recursos_portafolio\socialmediaicons\behance.png" alt="">Behance</a>
+        <a href="https://pin.it/7eX61JdA8"><img src="recursos_portafolio\socialmediaicons\pinterest.png" alt="">Pinterest</a>
+    </div>
+</section>
+
+
+</main>
+
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- imagen izquierda -->
+        <div class="footer-logo">
+            <img src="recursos_portafolio\footer\lips.png" alt="letstalk">
+        </div>
+        <!--left-->
+        <div class="footer-title">
+            <h4>CONTACTO</h4>
+            <p>¡Hablemos, crea conmigo!</p>
+        </div>
+        <!--right-->
+        <div class="footer-info">
+            <p>correo | <a href="mailto:iskreativ.ez@gmail.com">iskreativ.ez@gmail.com</a></p>
+            <p>instagram | @iskreativ</p>
+        </div>
+    </div>
+    <div class="copy">
+        <p>©2026 IS KREATIV</p>
+    </div>
+
+</footer>
+
+<!-- Btn scrolltop -->
+    <button id="scrollTopBtn" title="Volver arriba"><img src="recursos_portafolio\soul\arrowred.png" alt=""></button>
+
+
+<script>
+const btn = document.getElementById("scrollTopBtn");
+const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", function(){
+
+    let navBottom = nav.offsetTop + nav.offsetHeight;
+
+    if(window.scrollY > navBottom){
+        btn.classList.add("show");
+    }else{
+        btn.classList.remove("show");
+    }
+
+});
+
+btn.addEventListener("click", function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+});
+</script>
+
+</body>
+</html>
